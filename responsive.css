@@ -1,0 +1,280 @@
+@media screen and (max-width: 1421px) {
+	.video {
+		width: 21%;
+	}
+
+	#footer .container .column-footer {
+		flex: 0 0 35%;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	.slide-img {
+		height: 300px;
+	}
+
+	.column1 {
+		width: 10em;
+	}
+
+	.text-header-main {
+		font-size: 2.5em;
+	}
+
+	.line-main {
+		width: 7em;
+	}
+
+	.text-more-main {
+		font-size: 1em;
+	}
+
+	.column2 {
+		width: 30em;
+	}
+
+	#footer .container .column-footer {
+		flex: 0 0 60%;
+	}
+}
+
+@media screen and (max-width: 1066px) {
+	.video {
+		width: 28%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.logo-img {
+		max-width: 100px;
+	}
+
+	.navbar {
+		position: absolute;
+		opacity: 0.8;
+    	transform: translateX(-100%);
+    	width: 70%;
+    	height: 100vh;
+    	transition: 0.7s;	
+	}
+
+	.navbar-move-right {
+		transform: translateX(0px);
+		transition: 0.7s;	
+	}
+
+	.navbar ul {
+		flex-direction: column;
+		padding-top: 10vh;
+	}
+
+	.navbar ul li .navbar-other {
+		position: relative;
+	}
+
+	.navbar ul li .navbar-other a {
+		padding: 0px 5px;
+	}
+
+	.fa-bars {
+		display: block;
+	}
+
+	.menufix {
+		position: fixed;
+  		top: 3px;
+	}
+
+	.menufix-right {
+		right: 5%;
+	}
+
+	.video {
+		margin-left: 1.5em;
+	}
+
+	.scroll-top {
+		width: 40px;
+    	height: 40px;
+    	font-size: 1.5em;
+	}
+
+	.scroll-top:hover {
+		background: #ea7c09;
+		color: var(--white);
+	}
+}
+
+@media screen and (max-width: 799px) {
+	 .container {
+ 		width: 90%;
+ 	}
+	.video {
+		width: 43%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.caybut-2 {
+		right: 70%;
+	}
+
+	.navbar ul li a, .navbar ul li .navbar-other a {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.text-slide p {
+		font-size: 1.3em;
+	}
+
+	.slide-line {
+		width: 7em;
+	}
+
+	.slide-img {
+		height: 200px;
+	}
+
+	.text-header-main {
+		font-size: 2.3em;
+	}
+
+	.text-more-main {
+		font-size: 1em;
+	}
+
+}
+
+@media screen and (max-width: 500px) {	
+
+	.logo-img-name {
+		font-size: 0.8em;
+	}
+
+	.Tap-moi .container {
+		width: 100%;
+	}
+
+	.navbar ul li a, .navbar ul li .navbar-other a {
+		font-size: 0.8em;
+	}
+
+	.header-main {
+		margin: 0 1em;
+		padding-bottom: 1em;
+	}
+
+	.column2 {
+		margin-left: 1em;
+	}
+
+	.text-slide p {
+		font-size: 1em;
+	}
+
+	.text-header-main {
+		font-size: 2em;
+	}
+
+	.line-main {
+		border-bottom: 3px solid var(--yellow);
+		width: 5em;
+	}
+
+	.text-more-main {
+		font-size: 0.8em;
+	}
+
+	.video {
+		margin-left: 1em;
+		width: 43%;
+		padding: 7px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.text-header-main {
+		font-size: 1.8em;
+	}
+
+	.text-more-main {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.slide-img {
+		height: 180px;
+	}
+
+	.text-slide {
+		margin-top: 5em;
+	}
+
+	.text-header-main {
+		font-size: 1.5em;
+	}
+
+	.column2 {
+		margin-left: 0.7em;
+	}
+
+	.line-main {
+		border-bottom: 3px solid var(--yellow);
+		width: 4em;
+	}
+
+	.text-more-main {
+		padding: 0.7em 0;
+	}
+
+	.video a h3 {
+		font-size: 0.8em;
+	}
+
+	.title-footer {
+		font-size: 1.4em;
+	}
+
+	.footer-line {
+		width: 17em;
+	}
+
+	.content-footer {
+		font-size: 0.9em;
+	}
+
+	.body-footer .fa {
+		font-size: 1.3em;
+		line-height: 1.8em;
+		width: 1.8em;
+	}
+
+	.banquyen {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.logo-img-name {
+		font-size: 0.7em;
+	}
+
+	.text-header-main {
+		font-size: 1.4em;
+	}
+
+	.line-main {
+		border-bottom: 3px solid var(--yellow);
+		width: 3em;
+	}
+
+	.text-more-main {
+		font-size: 0.6em;
+	}
+}
