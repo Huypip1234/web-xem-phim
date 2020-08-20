@@ -15,7 +15,7 @@ let images = [
 	'images/slide1.jpeg',	
 	'images/slide3.jpeg',
 	'images/slide4.jpeg',
-	'images/slide2.jpg',
+	'images/slide2.JPG',
 ];
 
 tat_ca_tap.onclick = () => {
