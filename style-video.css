@@ -43,3 +43,9 @@
 	font-size: 1.75em;
 	padding: 1em 0;
 }
+
+.chu-y {
+	padding: 1em 0;
+	font-size: 1.2em;
+	color: var(--yellow);
+}
