@@ -6,17 +6,8 @@ const icon2 = document.getElementsByClassName('fa')[0];
 const SOV_la_ai = document.getElementsByTagName('li')[3];
 
 const hamburger = document.getElementsByClassName('fa-bars')[0];
-//const hamburgerX = document.getElementsByClassName('fa-times')[0];
 const sticky = hamburger.offsetTop;
 const sticky2 = nav_bar.offsetTop;
-
-let images = [
-	'images/movie28.jpg',
-	'images/slide1.jpeg',	
-	'images/slide3.jpeg',
-	'images/slide4.jpeg',
-	'images/slide2.JPG',
-];
 
 tat_ca_tap.onclick = () => {
 	icon.classList.toggle("fa-chevron-down");
@@ -62,73 +53,53 @@ window.addEventListener("scroll",function(){
     
     })
 
+const nut_li = Array.from(document.querySelectorAll('div.dau_cham i'));
+const slides = Array.from(document.querySelectorAll('div.slide-img div'));
 
-let img_slide = document.getElementsByClassName('slide-img')[0];
+    for (let i in nut_li){
+        nut_li[i].addEventListener('click', function() {
+            clearInterval(interval);
+            for(let i in slides){
+                slides[i].classList.remove('ra');
+                nut_li[i].classList.remove('active_slide');
+            }
+            const x = this.getAttribute('data');
+            const y = document.getElementById(x);
+
+            y.classList.add('active_slide');
+
+            slides[i].classList.add('ra');
+        });
+    };
+
 let curent = 0;
-let dau_cham_id0 = document.getElementById('zero');
-let dau_cham_id1 = document.getElementById('one');
-let dau_cham_id2 = document.getElementById('two');
-let dau_cham_id3 = document.getElementById('three');
-let dau_cham_id4 = document.getElementById('four');
-const daucham_other = Array.from(document.getElementsByClassName('fa-circle'));
+    let updateImage_auto = function() {
+        if (curent >= 5) {
+            curent = 0;
+        }
+        for(let i in slides){
+            slides[i].classList.remove('ra');
+            nut_li[i].classList.remove('active_slide');
+        }
+        if(curent===0) {
+            slides[0].classList.add('ra');
+            nut_li[0].classList.add('active_slide');
+        } else if(curent===1) {
+            slides[1].classList.add('ra');
+            nut_li[1].classList.add('active_slide');
+        } else if(curent===2) {
+            slides[2].classList.add('ra');
+            nut_li[2].classList.add('active_slide');
+        } else if(curent===3) {
+            slides[3].classList.add('ra');
+            nut_li[3].classList.add('active_slide');
+        } else if(curent===4) {
+            slides[4].classList.add('ra');
+            nut_li[4].classList.add('active_slide');
+        } 
+        curent++;
+    }
 
-let updateImage_auto = function() {
-  if (curent >= images.length) {
-    curent = 0;
-  }
-  if(curent===0) {
-  	for (let i in daucham_other) {
-		daucham_other[i].classList.remove("active_slide");
-	}
-  	dau_cham_id0.classList.add('active_slide');
-  } else if (curent===1) {
-  	for (let i in daucham_other) {
-		daucham_other[i].classList.remove("active_slide");
-	}
-  	dau_cham_id1.classList.add('active_slide');
-  } else if (curent===2) {
-  	for (let i in daucham_other) {
-		daucham_other[i].classList.remove("active_slide");
-	}
-  	dau_cham_id2.classList.add('active_slide');
-  } else if (curent===3) {
-  	for (let i in daucham_other) {
-		daucham_other[i].classList.remove("active_slide");
-	}
-  	dau_cham_id3.classList.add('active_slide');
-  } else if (curent===4) {
-  	for (let i in daucham_other) {
-		daucham_other[i].classList.remove("active_slide");
-	}
-  	dau_cham_id4.classList.add('active_slide');
-  }
-  img_slide.style.backgroundImage = 'url(' + images[curent] + ')';
-  curent++;
-}
-
-updateImage_auto();
-let interval = setInterval(updateImage_auto, 3000);
-
-const updateImage = (id) => {
-
-	const dau_cham = document.getElementById(id);
-	clearInterval(interval);
-	for (let i in daucham_other) {
-		daucham_other[i].classList.remove("active_slide");
-	}
-	dau_cham.classList.add('active_slide');
-
-	img_slide.style.transition = 'unset';
-	if(id === 'zero') {
-		img_slide.style.backgroundImage = 'url(' + images[0] + ')';
-	} else if(id === 'one') {
-		img_slide.style.backgroundImage = 'url(' + images[1] + ')';
-	} else if(id === 'two') {
-		img_slide.style.backgroundImage = 'url(' + images[2] + ')';
-	} else if(id === 'three') {
-		img_slide.style.backgroundImage = 'url(' + images[3] + ')';
-	} else if(id === 'four') {
-		img_slide.style.backgroundImage = 'url(' + images[4] + ')';
-	}
-}
+    updateImage_auto();
+    let interval = setInterval(updateImage_auto, 3000);
 
