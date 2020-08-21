@@ -1,51 +1,72 @@
-/* Responsive video youtube----- */
-#header-top {
-	background-color: var(--black-2);
-}
-
-#header-top .container {
-	justify-content: flex-end;
-}
-
-.fa-bars {
-	color: var(--white);
-}
-
-.fa-times {
-	color: var(--white);
-}
-
-.body-video {
-	background-color: var(--black-2);
-}
-.menutora {
-	padding: 0;
-}
-
-.video-padding {
-	padding: 10vh 0;
-	margin-bottom: 5vh;
-}
-
+@media screen and (max-width: 1421px) {
 .video-watch {
-	margin: auto;
-	width: 1050.44px;
-	height: 590.873px;
-}
-
-.container .video-watch iframe {
-    width: 100%;
-    height: 100%;
+	width: 1016.17px;
+    height: 571.596px;
 }
 
 .video-content h3 {
-	color: var(--white);
-	font-size: 1.75em;
-	padding: 1em 0;
+	padding: 0.7em 0;
+}
 }
 
-.chu-y {
-	padding: 1em 0;
-	font-size: 1.2em;
-	color: var(--yellow);
+@media screen and (max-width: 1357px) {
+.video-watch {
+	width: 815.016px;
+    height: 458.446px;
+}
+}
+
+@media screen and (max-width: 1088px) {
+.video-watch {
+	width: 692.844px;
+    height: 389.725px;
+}
+}
+
+@media screen and (max-width: 925px) {
+.video-watch {
+	width: 510px;
+    height: 286.875px;
+}
+}
+
+@media screen and (max-width: 567px) {
+.video-watch {
+	width: 100%;
+    height: 286.875px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.video-watch {
+	height: 250px;
+}
+
+.video-content h3 {
+	font-size: 1.5em;
+}
+}
+
+@media screen and (max-width: 450px) {
+.video-watch {
+	height: 230px;
+}
+}
+
+@media screen and (max-width: 400px) {
+.video-watch {
+	height: 210px;
+}
+}
+
+@media screen and (max-width:350px) {
+.video-watch {
+	height: 180px;
+}
+}
+
+@media screen and (max-width: 320px) {
+.video-watch {
+    height: 168.875px;
+}
 }
