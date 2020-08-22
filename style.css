@@ -168,13 +168,11 @@ header {
 	color: var(--black-2);
 	cursor: pointer;
 	display: none;
-	z-index: 20;
 }
 
 .fa-times {
 	color: var(--black-2);
 	cursor: pointer;
-	z-index: 20;
 }
 
 /*Slide*/
@@ -205,12 +203,12 @@ header {
 }
 
 .slide-img-slideAll-slide1 {
-	background-image: url("images/movie28.jpg");
+	background-image: url("images/slide1.jpeg");
 	z-index: 1;
 }
 
 .slide-img-slideAll-slide2 {
-	background-image: url("images/slide1.jpeg");
+	background-image: url("images/slide4.jpeg");
 	z-index: 2;
 }
 
@@ -220,7 +218,7 @@ header {
 }
 
 .slide-img-slideAll-slide4 {
-	background-image: url("images/slide4.jpeg");
+	background-image: url("images/movie28fix2.jpg");
 	z-index: 4;
 }
 
