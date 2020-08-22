@@ -257,29 +257,8 @@
 <a class="scroll-top" href="#header-top"><i class="fa fa-chevron-up"></i></a>
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=498541831072916&autoLogAppEvents=1" nonce="Ua9RJz0G"></script>
-
-<script type="text/javascript" src="main.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
 
 <script type="text/javascript">
 //scrool-effect thư viện scrollreveal
@@ -305,7 +284,28 @@ sr.reveal('.text-header-main',{delay: 150});
 sr.reveal('.column1 img',{});
 sr.reveal('.text-more-main',{delay: 250});
 sr.reveal('.video',{});
+</script>
 
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=498541831072916&autoLogAppEvents=1" nonce="Ua9RJz0G"></script>
+
+<script type="text/javascript" src="main.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 </script>
 </body>
 </html>
