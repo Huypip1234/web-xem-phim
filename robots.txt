@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://shinvietsubofficial.tk/sitemap_html.xml
+Sitemap: https://shinvietsubofficial.tk/sitemap_index.xml
