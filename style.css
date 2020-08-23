@@ -203,7 +203,8 @@ header {
 }
 
 .slide-img-slideAll-slide1 {
-	background-image: url("images/slide1.jpeg");
+	background-image: url("images/movie28.jpg");
+	
 	z-index: 1;
 }
 
@@ -218,7 +219,7 @@ header {
 }
 
 .slide-img-slideAll-slide4 {
-	background-image: url("images/movie28fix2.jpg");
+	background-image: url("images/slide1.jpeg");
 	z-index: 4;
 }
 
