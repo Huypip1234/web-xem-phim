@@ -51,6 +51,10 @@
 		max-width: 100px;
 	}
 
+	.caybut-1 {
+		left: 20%;
+	}
+
 	.navbar {
 		position: absolute;
 		opacity: 0.8;
@@ -117,9 +121,6 @@
 }
 
 @media screen and (max-width: 750px) {
-	.caybut-2 {
-		right: 70%;
-	}
 
 	.navbar ul li a, .navbar ul li .navbar-other a {
 		font-size: 0.9em;
@@ -208,6 +209,11 @@
 }
 
 @media screen and (max-width: 400px) {
+
+	.caybut-1 {
+		left: 15%;
+	}
+
 	.slide-img {
 		height: 180px;
 	}
