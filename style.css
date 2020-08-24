@@ -1,311 +1,496 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Shin Vietsub Official</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import crayon;
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="images/shinLogo.png" href="images/shinLogo.png"/>
-	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<script data-ad-client="ca-pub-9611673349417496" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-<body>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--white);
+}
 
-<!--Start Header-->
-	<header>
-			<div id="header-top">
-				<div class="container">
-					<div class="logo">
-						<a href="index.html"><img src="images/shinLogo.png" class="logo-img"></a>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
-						<h1><a href="index.html" class="logo-img-name">Shin Vietsub Official</a></h1>
-					</div>
+:root {
+	--white: #ffffff;
+	--blue: #0444c3;
+	--yellow: #ffff3b;
+	--black-0: #C4C4C4;
+	--black-1: #353523;
+	--black-2: #1F1F1F;
+	--black-3: #000000;
+}
 
-					<div class="caybut-1"><img src="images/butmau.jpg"></div>
-					<div class="caybut-2"><img src="images/butmau - Sao chép.jpg"></div>
+header {
+}
+
+.container {
+	width: 75%;
+	margin: auto;
+}
+
+#header-top {
+	background-color: var(--white);
+}
+
+.caybut-1 {
+	max-width: 15%;
+	position: absolute;
+	left: 25%;
+}
+
+.caybut-1 img {
+	width: 100%;
+}
+
+.caybut-2 {
+	max-width: 15%;
+	position: absolute;
+	right: 25%;
+}
+
+.caybut-2 img {
+	width: 100%;
+}
 
 
-					<div class="search-form">
-						<i class="fa fa-bars fa-2x"></i>
-					</div>
-				</div>
-			</div>
-			<div class="navbar">
-				<div class="container">
-					<ul>
-						<li><a class="navbar-a-menu active color-white" href="index.html" onclick="changeColorMenu('Home')" id="Home">TRANG CHỦ</a></li>
-						<li><a class="navbar-a-menu color-white" href="#Tap-moi" onclick="changeColorMenu('newChap')" id="newChap">TẬP MỚI</a></li>
-						<li>
-							<a class="navbar-a-menu color-white" id="tat_ca_tap">
-								TẤT CẢ TẬP
-								<i class="fa fa-chevron-down fa-xs"></i>
-							</a>
-							<div class="navbar-other navbar-other-show">
-								<!--<a href="#" class="color-white">Tập thường</a>-->
-								<a href="#Tap-kinh-di" class="color-white">Tập Kinh Dị</a>
-								<a href="#Movie" class="color-white">Shin Movie</a>
-							</div>
-						</li>
-						<!--<li><a class="navbar-a-menu color-white" href="#"  onclick="changeColorMenu('SOV')" id="SOV">NHẠC SHIN</a></li>-->
-						<li><a class="navbar-a-menu color-white" href="#quan-ao-shin" onclick="changeColorMenu('Shirt'), alert('Tính năng đang được phát triển, sẽ sớm ra mắt thôi nhé')" id="Shirt">QUẦN ÁO SHIN</a></li>
-						<!--<li><a class="navbar-a-menu color-white" href="#" onclick="changeColorMenu('Fact')" id="Fact">FACT VỀ SHIN</a></li>-->
-						<li><a class="navbar-a-menu color-white" href="#footer" onclick="changeColorMenu('Contact')" id="Contact">LIÊN HỆ</a></li>
-					</ul>
-				</div>
-			</div>
-	</header>
-<!--End Header-->
+#header-top .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
 
-<!--Start Slide-->
-	<div class="slide">
-		<div class="container">
-			<div class="slide-img">
-				<div class="slide-img-slideAll slide-img-slideAll-slide1 ra"></div>
-				<div class="slide-img-slideAll slide-img-slideAll-slide2 "></div>
-				<div class="slide-img-slideAll slide-img-slideAll-slide3 "></div>
-				<div class="slide-img-slideAll slide-img-slideAll-slide4 "></div>
-				<div class="slide-img-slideAll slide-img-slideAll-slide5 "></div>
-			</div>
-			<div class="dau_cham">
-				<i data="one" id="one" class="fa fa-circle  active_slide"></i>
-				<i data="two" id="two" class="fa fa-circle"></i>
-				<i data="three" id="three" class="fa fa-circle"></i>
-				<i data="four" id="four" class="fa fa-circle"></i>
-				<i data="fire" id="fire" class="fa fa-circle"></i>
-			</div>
-			<div class="text-slide">
-				<div class="slide-line"></div>
-				<p>Chúc các bạn xem phim vui vẻ !!!</p>
-				<div class="slide-line"></div>
-			</div>
-		</div>
-	</div>
-<!--End Slide-->
+.logo {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
 
-<!--Start Tap moi-->
-<div id="Tap-moi">
-	<div class="container">
-		<div class="header-main">
-				<div class="column1">
-					<img src="images/tapmoi.jpg">
-				</div>
-				<div class="column2">
-					<div class="text-header-main">Tập mới</div>
-					<div class="line-main"></div>
-					<div class="text-more-main">Hàng tuần, chúng mình sẽ ra những tập mới nhất tại đây. Các bạn nhớ đón xem!</div>
-				</div>
-		</div>
-		<div class="body-main">
-			<div class="video">
-				<a href="video/1035(3).html"><img src="images/thumbnail/1035 (3).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1035(3).html"><h3>Shin Vietsub tập 1035 (P3) - Bức vẽ tuổi thơ bị xóa</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1035(2).html"><img src="images/thumbnail/1035 (2).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1035(2).html"><h3>Shin Vietsub tập 1035 (P2) - Cái bàn sưởi thật ấm áp...</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1035(1).html"><img src="images/thumbnail/1035 (1).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1035(1).html"><h3>Shin Vietsub tập 1035 (P1) - Shin, cậu bé bút chì</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1032(3).html"><img src="images/thumbnail/1032 (3).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1032(3).html"><h3>Shin Vietsub tập 1032 (P3) - Tớ làm thư kí của Masao</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1032(2).html"><img src="images/thumbnail/1032 (2).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1032(2).html"><h3>Shin Vietsub tập 1032 (P2) - Bố đeo mặt nạ</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1032(1).html"><img src="images/thumbnail/1032 (1).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1032(1).html"><h3>Shin Vietsub tập 1032 (P1) - Buổi ngắm hoa bí ẩn</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1025(3).html"><img src="images/thumbnail/1025 (3).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1025(3).html"><h3>Shin Vietsub tập 1025 (P3) - Hima và chú gấu bông...</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1025(2).html"><img src="images/thumbnail/1025 (2).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1025(2).html"><h3>Shin Vietsub tập 1025 (P2) - Bố muốn ăn mì Ramen...</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1025(1).html"><img src="images/thumbnail/1025 (1).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1025(1).html"><h3>Shin Vietsub tập 1025 (P1) - Chiến lược trốn khỏi nhà</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1022(3).html"><img src="images/thumbnail/1022 (3).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1022(3).html"><h3>Shin Vietsub tập 1022 (P3) - Công viên thể thao</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1022(2).html"><img src="images/thumbnail/1022 (2).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1022(2).html"><h3>Shin Vietsub tập 1022 (P2) - Sau tất cả, mọi thứ vẫn vậy</h3></a>
-			</div>
-			<div class="video">
-				<a href="video/1022(1).html"><img src="images/thumbnail/1022 (1).jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/1022(1).html"><h3>Shin Vietsub tập 1022 (P1) - Mình muốn nó là 1 bí mật</h3></a>
-			</div>
-		</div>		
-	</div>
-</div>
-<!--End Tap moi-->
+.logo-img {
+	max-width: 170px;
+	padding-top: 20px;
+}
 
-<!--Start Tap Kinh di-->
-<div id="Tap-kinh-di">
-	<div class="container">
-		<div class="header-main">
-				<div class="column1">
-					<img src="images/shin kinh dị.jpg">
-				</div>
-				<div class="column2">
-					<div class="text-header-main">Tập kinh dị</div>
-					<div class="line-main"></div>
-					<div class="text-more-main">Đây là nơi bọn mình tổng hợp những tập phim kinh dị vô cùng đáng sợ nhé.</div>
-				</div>
-		</div>
-		<div class="body-main">
-			<div class="video">
-				<a href="video/986.html"><img src="images/thumbnail/Kinh dị 2.jpg"></a>
-				<p>12/8/2020</p>
-				<a href="video/986.html"><h3>Shin Vietsub tập 986 - Thiếu nữ bán bánh Mochi</h3></a>
-			</div>	
-			<div class="video">
-				<a href="video/972.html"><img src="images/thumbnail/Kinh dị 1.jpeg"></a>
-				<p>12/8/2020</p>
-				<a href="video/972.html"><h3>Shin Vietsub tập 972 - Chiếc xe bus không điểm dừng</h3></a>
-			</div>	
-		</div>		
-	</div>
-</div>
-<!--End Tap moi-->
+.logo-img:hover {
+	transform: scale(1.1, 1.1);
+}
 
-<!--Start shin movie-->
-<div id="Movie">
-	<div class="container">
-		<div class="header-main">
-				<div class="column1">
-					<img src="images/movie3.jpg">
-				</div>
-				<div class="column2">
-					<div class="text-header-main">Shin movie</div>
-					<div class="line-main"></div>
-					<div class="text-more-main">Còn đây là nơi chứa những bộ movie từ trước tới nay của Shin, vô cùng gay cấn.</div>
-				</div>
-		</div>
-		<div class="body-main">
-			<div class="video" onclick="alert('Tạm thời chưa có phim, sorry các bạn nha')">
-				<a href="#a"><img src="images/Crayon-Shin-chan-Movie-28.jpg"></a>
-				<p>12/8/2020</p>
-				<a href="#a"><h3>Movie 28: Thế giới cây bút thần kì</h3></a>
-			</div>
-			<div class="video" onclick="alert('Tạm thời chưa có phim, sorry các bạn nha')">
-				<a href="#a"><img src="images/movie 27.jpg"></a>
-				<p>12/8/2020</p>
-				<a href="#a"><h3>Movie 26: Chuyến trăng mật bão táp nhà Nohara</h3></a>
-			</div>
-		</div>		
-	</div>
-</div>
-<!--End Movie-->
+.logo-img-name {
+	text-decoration: none;
+	font-weight: bold;
+	background: linear-gradient(to right, #376cc4 0%, #c41e90 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
-<!--Start footer-->
-	<div id="footer">
-		<div class="container">
-			<div class="column-footer">
-				<div class="title-footer">Giới thiệu</div>
-				<div class="footer-line"></div>
-				<div class="content-footer">
-					<div class="body-footer">
-						Hi, bọn mình là đội ngũ Shin Vietsub Official, đây là trang web bọn mình sẽ đăng tải những video mới nhất trước khi đưa lên youtube. Bạn nào muốn xem sớm thì vô đây nha
-					</div>
-				</div>
-			</div>
-			<div class="column-footer">
-				<div class="title-footer">Liên kết</div>
-				<div class="footer-line"></div>
-				<div class="body-footer">
-					<div class="fb-page" data-href="https://www.facebook.com/Shinvietsubofficial-106466477636274" data-tabs="272" data-width="280" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Shinvietsubofficial-106466477636274" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Shinvietsubofficial-106466477636274">Shinvietsubofficial</a></blockquote></div>
-				</div>
-			</div>
-			<div class="column-footer">
-				<div class="title-footer">Liên hệ</div>
-				<div class="footer-line"></div>
-				<div class="body-footer">
-					<a href="https://www.facebook.com/Shinvietsubofficial-106466477636274" target="_blank"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-					<a href="https://www.youtube.com/channel/UCCvNAxCASAQzc32VVUQ-VHg" target="_blank"><i id="yt" class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
-					<a href="#chua-co-gi" onclick="alert('Chưa có ins, để vô cho đẹp thôi :v')"><i id='ins' class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="banquyen">Copyright © 2020 - 2021. by <span>ShinVietsubOfficial</span></div>
-	</div>
-<!--End footer-->
+.navbar {
+	background-image: url('images/info_bg.png');
+	z-index: 10;
+	width: 100%;
+	transition: 0.3s;
+}
 
-<a class="scroll-top" href="#header-top"><i class="fa fa-chevron-up"></i></a>
+.menufix {
+	position: fixed;
+  	top: 0;
+}
 
-<div id="fb-root"></div>
+.menutora {
+    padding: 10px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	line-height: 50px;
+}
 
-<script type="text/javascript">
-//scrool-effect thư viện scrollreveal
-//cũng có thể bắt sự kiện onscroll
-const sr_but = ScrollReveal({
-	origin: 'left',
-	distance: '100%',
-	duration: 2000,
-	reset: true,
-});
-sr_but.reveal('.caybut-1',{});
-sr_but.reveal('.caybut-2',{origin: 'right',delay: 400});
+.navbar ul li {
+}
 
-const sr = ScrollReveal({
-	origin: 'top',
-	distance: '50px',
-	duration: 1000,
-	reset: true,
-})
-sr.reveal('.logo-img-name',{});
-sr.reveal('.text-slide',{});
-sr.reveal('.text-header-main',{delay: 150});
-sr.reveal('.column1 img',{});
-sr.reveal('.text-more-main',{delay: 250});
-sr.reveal('.video',{});
-</script>
+.navbar ul li a {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1em;
+	display: block;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
 
-<script type="text/javascript" src="main.js"></script>
+.color-white {
+	color: var(--white);
+}
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=498541831072916&autoLogAppEvents=1" nonce="Ua9RJz0G"></script>
+.navbar ul li .navbar-other {
+	position: absolute;
+	background-image: url('images/info_bg.png');
+	transition: 0.5s;
+	text-align: center;
+	z-index: 10;
+}
+.navbar-other-show {
+	display: none;
+}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+.navbar ul li .navbar-a-menu:hover {
+	color: var(--yellow);
+	transition: all 0.5s;
+}
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-</body>
-</html>
+.navbar ul li .navbar-other a {
+	padding: 0px 10px;
+	font-size: 1em;
+	border-bottom: 1px solid var(--yellow);
+}
+
+.navbar ul li .navbar-other a:hover {
+	background-color: var(--yellow);
+	color: var(--black-3);
+}
+
+.active {
+	color: var(--yellow);
+}
+
+.fa-bars {
+	color: var(--black-2);
+	cursor: pointer;
+	display: none;
+}
+
+.fa-times {
+	color: var(--black-2);
+	cursor: pointer;
+}
+
+/*Slide*/
+
+.slide {
+	padding: 5vh 0px;
+	background-color: var(--white);
+
+}
+
+.slide-img {
+	height: 500px;
+	width: 100%;
+	margin: 2vh 0px;
+	border: 5px solid var(--blue);
+	position: relative;
+}
+
+.slide-img-slideAll {
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s ease;
+	position: absolute;
+	opacity: 0;
+    transition: all 1s ease;
+}
+
+.slide-img-slideAll-slide1 {
+	background-image: url("images/movie28.jpg");
+	
+	z-index: 1;
+}
+
+.slide-img-slideAll-slide2 {
+	background-image: url("images/slide4.jpeg");
+	z-index: 2;
+}
+
+.slide-img-slideAll-slide3 {
+	background-image: url("images/slide3.jpeg");
+	z-index: 3;
+}
+
+.slide-img-slideAll-slide4 {
+	background-image: url("images/slide1.jpeg");
+	z-index: 4;
+}
+
+.slide-img-slideAll-slide5 {
+	background-image: url("images/slide2.jpg");
+	z-index: 5;
+}
+
+.ra{
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.dau_cham {
+	text-align: center;
+	color: var(--blue);
+}
+
+.dau_cham i {
+	cursor: pointer;
+	padding: 0px 5px;
+}
+
+.dau_cham i:hover {
+	color: var(--black-2);
+}
+
+.active_slide {
+	color: var(--black-2);
+}
+
+.text-slide {
+	margin-top: 8em;
+	text-align: center;
+}
+
+.text-slide p {
+	line-height: 2em;
+	font-size: 1.5em; 
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.slide-line {
+	border-bottom: 2px solid var(--black-3);
+	width: 10em;
+	margin: auto;
+}
+
+/*tap moi*/
+#Tap-moi {
+	background-image: url('images/info_bg.png'); 
+	padding: 0;
+	margin: 0;
+}
+
+.header-main {
+	display: flex;
+	padding: 5em 0;
+}
+
+.column1 {
+	width: 13em;
+}
+
+.column1 img {
+	width: 100%;
+}
+
+.column2 {
+	width: 40em;
+	margin-left: 1.5em;
+}
+
+.text-header-main {
+	text-transform: uppercase;
+	color: var(--white);
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.line-main {
+	border-bottom: 4px solid var(--yellow);
+	width: 8em;
+}
+
+.text-more-main {
+	padding: 1.3em 0;
+	font-size: 1.2em;
+	color: var(--white);
+	opacity: 0.8;
+}
+
+.body-main {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3em 0;
+}
+
+.video {
+	background-color: var(--black-2);
+	width: 17%;
+	margin-left: 2em;
+	margin-bottom: 2em;
+	padding: 10px;
+}
+
+.video img {
+	width: 100%;
+	transition: 0.5s;
+}
+
+.video img:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.video p {
+	opacity: 0.8;
+	color: var(--white);
+	font-size: 0.7em;
+}
+
+.video a {
+	text-decoration: none;
+}
+
+.video a h3 {
+	color: var(--white);
+	font-size: 0.9em;
+	transition: 0.5s;
+}
+
+.video a h3:hover {
+	color: var(--yellow);
+	transition: 0.5s;
+}
+
+/*tap kinh di*/
+#Tap-kinh-di {
+	background-image: url('images/creapy-background.jpg');
+}
+
+#Tap-kinh-di .text-header-main {
+	color: var(--black-2);
+}
+
+#Tap-kinh-di .line-main {
+	border-bottom: 4px solid var(--black-2);
+}
+
+#Tap-kinh-di .text-more-main {
+	color: var(--black-2);
+	opacity: 0.9;
+}
+
+/*tap movie*/
+#Movie {
+	background-image: url('images/info_bg.png'); 
+	padding: 0;
+	margin: 0;
+}
+
+/*footer*/ 
+#footer {
+	background-color: var(--black-2);
+}
+
+#footer .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#footer .container .column-footer {
+	width: 100%;
+	flex: 0 0 30%;
+	margin: 2em 0;
+	margin-top: 4em;
+}
+
+.title-footer {
+	color: var(--white);
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
+
+.footer-line {
+	border-bottom: 4px solid var(--yellow);
+	width: 20em;
+}
+
+.body-footer {
+	padding-top: 2em;
+}
+
+.content-footer {
+	font-size: 1em;
+	color: var(--white);
+}
+
+.body-footer .fa{
+	background-color: #b9b9b9;
+	line-height: 2em;
+	font-size: 1.5em;
+	color: var(--black-3);
+	width: 2em;
+	text-align: center;
+	margin-left: 0.3em;
+	transition: 0.3s;
+}
+
+.body-footer #fb:hover {
+	background-color: var(--blue);
+	color: var(--white);
+	transition: 0.3s;
+}
+
+.body-footer #yt:hover {
+	background-color: #f00;
+	color: var(--white);
+	transition: 0.3s;
+}
+
+.body-footer #ins:hover {
+	background-color: #da2983;
+	color: var(--white);
+	transition: 0.3s;
+}
+
+.banquyen {
+	text-align: center;
+	color: var(--white);
+	font-size: 1.2em;
+	padding-bottom: 1em;
+}
+
+.banquyen span {
+	color: var(--yellow);
+}
+
+/*end*/
+.scroll-top {
+	width: 55px;
+    height: 55px;
+    font-size: 2em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 61px;
+    right: 20px;
+    background: #ea7c09;
+    border: solid 1px #ea7c09;
+    border-radius: 5px;
+    z-index: 20;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+.scroll-top-show {
+	display: flex;
+}
+
+.scroll-top:hover {
+	background: var(--white);
+	color: #ea7c09;
+	transition: all 0.3s;
+
+}
