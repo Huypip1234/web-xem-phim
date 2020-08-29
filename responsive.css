@@ -1,6 +1,6 @@
 @media screen and (max-width: 1421px) {
 	.video {
-		width: 21%;
+		width: calc(25% - 20px);
 	}
 
 	#footer .container .column-footer {
@@ -10,6 +10,16 @@
 
 
 @media screen and (max-width: 1200px) {
+	#Tap-moi .container {
+		width: 80%;
+	}
+	#Tap-kinh-di .container{
+		width: 80%;
+	}
+	#Movie .container{
+		width: 80%;
+	}
+
 	.slide-img {
 		height: 300px;
 	}
@@ -41,7 +51,7 @@
 
 @media screen and (max-width: 1066px) {
 	.video {
-		width: 28%;
+		width: calc(33.333% - 20px);
 	}
 }
 
@@ -95,10 +105,6 @@
 		right: 5%;
 	}
 
-	.video {
-		margin-left: 1.5em;
-	}
-
 	.scroll-top {
 		width: 40px;
     	height: 40px;
@@ -112,12 +118,19 @@
 }
 
 @media screen and (max-width: 799px) {
-	 .container {
+	#Tap-moi .container {
+		width: 93%;
+	}
+	#Tap-kinh-di .container{
+		width: 93%;
+	}
+
+	#Movie .container{
+		width: 93%;
+	}
+	.container {
  		width: 90%;
  	}
-	.video {
-		width: 43%;
-	}
 }
 
 @media screen and (max-width: 750px) {
@@ -125,6 +138,7 @@
 	.navbar ul li a, .navbar ul li .navbar-other a {
 		font-size: 0.9em;
 	}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -147,6 +161,10 @@
 
 	.text-more-main {
 		font-size: 1em;
+	}
+
+	.video {
+		width: calc(50% - 20px);
 	}
 
 }
@@ -192,19 +210,27 @@
 	}
 
 	.video {
-		margin-left: 1em;
-		width: 43%;
 		padding: 7px;
 	}
 }
 
 @media screen and (max-width: 450px) {
+
+	.body-main {
+		margin: 0 -5px;
+	}
 	.text-header-main {
 		font-size: 1.8em;
 	}
 
 	.text-more-main {
 		font-size: 0.7em;
+	}
+
+	.video {
+		width: calc(50% - 10px);
+		margin-left: 5px;
+    	margin-right: 5px;
 	}
 }
 
