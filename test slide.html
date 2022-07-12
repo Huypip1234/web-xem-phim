@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bai tap js 8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide {
+    height: 500px;
+    height: 100%;
+    margin: 2vh 0px;
+    border: 5px solid var(--blue);
+}
+ 
+.slide_1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide1_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.slide_2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide3_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 2;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.slide_3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide4_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 3;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.nut {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.nut ul li {
+    width: 15px;
+    height: 15px;
+    border:1px solid white;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+}
+ 
+.nut ul li:hover {
+    background-color: white;
+}
+.ra{
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.active_slide {
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <div id="id1" class="slide_1 ra"></div>
+            <div id="id2" class="slide_2"></div>
+            <div id="id3" class="slide_3"></div>
+        </div>
+        <div class="nut">
+            <ul>
+                <li data="one" id="one" class="active_slide "></li>
+                <li data="two" id="two"></li>
+                <li data="three" id="three"></li>
+            </ul>
+        </div>
+        <div class="text-slide">Hello bro</div>
+    </div>
+
+    <script type="text/javascript">
+    const nut_li = Array.from(document.querySelectorAll('div.nut ul li'));
+    const slides = Array.from(document.querySelectorAll('div.slide div'));
+    for (let i in nut_li){
+        nut_li[i].addEventListener('click', function() {
+            clearInterval(interval);
+            for(let i in slides){
+                slides[i].classList.remove('ra');
+                nut_li[i].classList.remove('active_slide');
+            }
+            const x = this.getAttribute('data');
+            const y = document.getElementById(x);
+
+            y.classList.add('active_slide');
+
+            slides[i].classList.add('ra');
+        });
+    };
+
+    let curent = 0;
+    let updateImage_auto = function() {
+        if (curent >= 3) {
+            curent = 0;
+        }
+        for(let i in slides){
+            slides[i].classList.remove('ra');
+            nut_li[i].classList.remove('active_slide');
+        }
+        if(curent===0) {
+            slides[0].classList.add('ra');
+            nut_li[0].classList.add('active_slide');
+        } else if(curent===1) {
+            slides[1].classList.add('ra');
+            nut_li[1].classList.add('active_slide');
+        } else if(curent===2) {
+            slides[2].classList.add('ra');
+            nut_li[2].classList.add('active_slide');
+        }
+        curent++;
+    }
+
+    updateImage_auto();
+    let interval = setInterval(updateImage_auto, 3000);
+
+    </script>
+</body>
+</html>
